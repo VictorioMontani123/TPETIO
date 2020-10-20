@@ -40,6 +40,19 @@
         $this->view->formAlta();
     }
 
+    public function ShowAll(){
+          $allclient =  $this->model->GetAll();
+
+          $this->view->ShowAll($allclient);
+
+    }
+
+    public function ShowAlone(){
+        $client =  $this->model->Get();
+
+        $this->view->ShowAll($client);
+    }
+
     
 
 
