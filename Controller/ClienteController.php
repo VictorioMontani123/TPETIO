@@ -19,26 +19,23 @@
 
     public function Alta(){
         $this->model->Insert($_POST['id'],$_POST['nombre'],$_POST['apellido'],$_POST['direccion'],$_POST['email'],$_POST['telefono'],$_POST['cuit']);
-
+        $this->view->ShowHome();
     }
 
     public function delete($id = null){
         $id = $id[':ID'];
         $this->model->Delete($id);
 
-        $this->view->ShowPredeterminado();
+        $this->view->ShowHome();
 
     }
 
     public function Modificar($id = null){
          $this->model->Edit($_POST['id'],$_POST['nombre'],$_POST['apellido'],$_POST['direccion'],$_POST['email'],$_POST['telefono'],$_POST['cuit']);
          
-         $this->view->ShowPredeterminadoADMIN();
+         $this->view->ShowHome();
     }
 
-    public function formAlta(){
-        $this->view->formAlta();
-    }
 
     public function ShowAll(){
           $allclient =  $this->model->GetAll();
@@ -48,9 +45,9 @@
     }
 
     public function ShowAlone(){
-        $client =  $this->model->Get();
+        $cliente =  $this->model->Get();
 
-        $this->view->ShowAll($client);
+        $this->view->ShowAll($cliente);
     }
 
     
