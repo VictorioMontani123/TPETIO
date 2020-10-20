@@ -39,7 +39,7 @@ class ClientesModel{
       }
     
 
-      // actualiza los datos de un cliente
+      // actualiza los datos de un cliente dado su id
       
     function update($id,$nombre,$apellido,$direccion,$email,$telefono,$cuit){
           $sentencia = $this->db->prepare("UPDATE clientes SET tipo=?, nombre=?, direccion=?,  valor=?, descripcion=?, fecha=?  WHERE id=? ");
