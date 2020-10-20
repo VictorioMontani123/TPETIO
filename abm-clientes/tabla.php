@@ -1,3 +1,6 @@
+<?php 
+
+$html= '
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,8 +29,8 @@
 
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="home.html" class="nav-link">HOME<span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a href="tabla.html" class="nav-link">TABLA DE USUARIOS</a></li>
+                    <li class="nav-item "><a href="home.html" class="nav-link">HOME<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item active"><a href="tabla.html" class="nav-link">TABLA DE USUARIOS</a></li>
                     <li class="nav-item"><a href="form.html" class="nav-link">FORMULARIO</a></li>
 
                 </ul>
@@ -35,10 +38,41 @@
         </div>
     </nav>
 
+    <div class="container mt-4 mb-5">
 
-    <img class="container d-flex justify-content-center mt-4" src="./imagenes/logo.png" alt="">
 
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Direccion</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Cuit</th>
+                </tr>
+            </thead>
+            <tbody>'; 
 
+            foreach ( $allclient as $client ){
+
+            $html.= ' 
+                <tr>
+                <th scope="row">1</th>
+                <td>' . $client->nombre.'  </td>
+                <td>' . $client->apellido.'  </td>
+                <td>' . $client->direccion.'  </td>
+                <td>' . $client->email.'  </td>
+                <td>' . $client->telefono.'  </td>
+                <td>' . $client->cuit.'  </td>
+                </tr>';
+            } 
+             
+            $html.= ' 
+            </tbody>
+        </table>
+    </div>
 
     <!-- Footer -->
     <footer class="page-footer font-small cyan darken-3 bg-dark mt-4 ">
@@ -101,4 +135,7 @@
 
 </body>
 
-</html>
+</html>';
+
+echo $html;
+

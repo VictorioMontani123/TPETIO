@@ -11,23 +11,21 @@ require_once /* agregar los controladores, modelos, vistas */
  $r = new Router();
 
     
-// "ruta", "VERBO", "Controlador", "metodo"
+    // "ruta", "VERBO", "Controlador", "metodo"
 
+    // llamamos al home
+    $r->addRoute("home", "GET", "ClienteController", "Home");   /* listo */
 
-// llamamos al home
-    $r->addRoute("home", "GET", "ClienteController", "Home");
+    // FORM ALTA
 
-// FORM ALTA
-    $r->addRoute("altaform", "POST", "ClienteController", "formularioAlta");
+    $r->addRoute("altaform", "POST", "ClienteController", "alta"); /* listo */
 
- // ALTA
-    $r->addRoute("alta", "GET", "ClienteController", "Alta");
+    // BORRAR
+    $r->addRoute("darDeBaja", "GET", "ClienteController", "delete"); /* en la tabla */
 
- // MODIFICAR CON ID
-    $r->addRoute("modificar/:ID", "GET", "ClienteController", "Modificar");
+    // MODIFICAR CON ID
+    $r->addRoute("modificar/:ID", "GET", "ClienteController", "Modificar"); /* en la tabla tmb */
   
-// BORRAR
-    $r->addRoute("eliminar/:ID", "GET", "ClienteController", "delete");
 
  
 
