@@ -1,0 +1,7 @@
+Esta es una somera descripcion de las distintas funciones que realizamos en el Model
+
+1- GetAll: nos trae todos los clientes de la base de datos
+
+2- Insert: nos inserta un nuevo cliente en la tabla de la bbdd
+
+3-Get: nos trae los datos de un cliente, dandole su id como parametro
