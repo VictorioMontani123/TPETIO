@@ -15,19 +15,19 @@ require_once /* agregar los controladores, modelos, vistas */
 
 
 // llamamos al home
-    $r->addRoute("home", "GET", "AbmController", "Home");
+    $r->addRoute("home", "GET", "ClienteController", "Home");
 
 // FORM ALTA
-    $r->addRoute("formAlta", "POST", "AbmController", "formAlta");
+    $r->addRoute("altaform", "POST", "ClienteController", "formularioAlta");
 
  // ALTA
-    $r->addRoute("alta", "GET", "AbmController", "Alta");
+    $r->addRoute("alta", "GET", "ClienteController", "Alta");
 
  // MODIFICAR CON ID
-    $r->addRoute("modificar/:ID", "GET", "AbmController", "Modificar");
+    $r->addRoute("modificar/:ID", "GET", "ClienteController", "Modificar");
   
 // BORRAR
-    $r->addRoute("eliminar/:ID", "GET", "PropertiesController", "delete");
+    $r->addRoute("eliminar/:ID", "GET", "ClienteController", "delete");
 
  
 
