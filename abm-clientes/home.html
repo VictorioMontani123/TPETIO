@@ -10,114 +10,193 @@
 </head>
 
 <body>
-    <nav>
 
-        <!-- Jona -->
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm navbarcolor">
+        <div class="container ">
+            <a href="#" class="navbar-brand">
+                <!-- Logo Image -->
+                <img src="assets/images/logocb3.png" width="30" alt="" class="d-inline-block align-middle mr-2">
+                <!-- Logo Text -->
 
+                <span class="text-uppercase font-weight-bold">ABM-CLIENTES</span>
+
+            </a>
+
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="assets/html/noticias.html" class="nav-link">Noticias</a></li>
+                    <li class="nav-item"><a href="assets/html/historia.html" class="nav-link">Historia</a></li>
+                    <li class="nav-item"><a href="assets/html/tickets.html" class="nav-link">Tickets</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
 
 
+    <!--  COMIENZA EL FORMULARIO -->
+
+
+    <div class="container w-50 mt-4">
+
+
+        <!-- Material form register -->
+        <div class="card bg-dark text-light">
+
+            <h5 class="card-header info-color white-text text-center py-4 mb-4 ">
+                <strong>Formulario</strong>
+            </h5>
+
+            <!--Card content-->
+            <div class="card-body px-lg-5 pt-0">
+
+                <!-- Form -->
+                <form action="altaform" method="post" class="text-center text-light" style="color: #757575;">
+
+                    <div class="form-row">
+                        <div class="col">
+                            <!-- First name -->
+                            <div class="md-form">
+                                <input type="text" id="nombre" class="form-control ">
+                                <label for="materialRegisterFormFirstName">Nombre</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <!-- Last name -->
+                            <div class="md-form">
+                                <input type="text" id="apellido" class="form-control">
+                                <label for="materialRegisterFormLastName">Apellido</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="md-form mt-0">
+                        <input type="text" id="direccion" class="form-control">
+                        <label for="materialRegisterFormEmail">Direccion</label>
+                    </div>
+
+
+                    <div class="md-form">
+                        <input type="text" id="telefono" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
+                        <label for="materialRegisterFormPassword">Telefono</label>
+                        <small id="materialRegisterFormPasswordHelpBlock" class="form-text  text-light  mb-4">
+                    (Caracteristica de Pais, Region, Ciudad)
+                    </small>
+                    </div>
+
+                    <div class="md-form">
+                        <input type="text" id="telefono" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
+                        <label for="materialRegisterFormPassword">Cuit</label>
+
+                    </div>
 
 
 
+                    <!-- Newsletter -->
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">
+                        <label class="form-check-label" for="materialRegisterFormNewsletter">Deseo recibir informacion adicional</label>
+                    </div>
+
+                    <!-- Sign up button -->
+                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Enviar</button>
 
 
 
+                    <a type="button" class="btn-floating btn-fb btn-sm">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a type="button" class="btn-floating btn-tw btn-sm">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a type="button" class="btn-floating btn-li btn-sm">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a type="button" class="btn-floating btn-git btn-sm">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <hr>
+
+                    <!-- Terms of service -->
+                    <p>Clickeando
+                        <em>acepta</em> los terminos y condiciones </p>
 
 
+                </form>
+                <!-- Form -->
 
+            </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-       <!-- Footer -->
-<footer class="page-footer font-small cyan darken-3 bg-dark">
-
-    <!-- Footer Elements -->
-    <div class="container">
-  
-      <!-- Grid row-->
-      <div class="row">
-  
-        <!-- Grid column -->
-        <div class="col-md-12 py-5">
-          <div class="mb-5 flex-center">
-  
-            <!-- Facebook -->
-            <a class="fb-ic">
-              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">Facebook </i>
-            </a>
-            <!-- Twitter -->
-            <a class="tw-ic">
-              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x">Twitter </i>
-            </a>
-            <!-- Google +-->
-            <a class="gplus-ic">
-              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x">Google </i>
-            </a>
-            <!--Linkedin -->
-            <a class="li-ic">
-              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x">--Linkedin </i>
-            </a>
-            <!--Instagram-->
-            <a class="ins-ic">
-              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">Instagram </i>
-            </a>
-            <!--Pinterest-->
-            <a class="pin-ic">
-              <i class="fab fa-pinterest fa-lg white-text fa-2x">Pinterest </i>
-            </a>
-          </div>
         </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row-->
-  
+        <!-- Material form register -->
+
+
     </div>
-    <!-- Footer Elements -->
-  
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  
-  
-  <!-- Footer -->
+
+    <!-- TERMINA EL FORMULARIO -->
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3 bg-dark mt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center d-flex justify-content-center">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x">Facebook </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x">Twitter </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x">Google </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x">Linkedin </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x">Instagram </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a class="pin-ic">
+                            <i class="fab fa-pinterest fa-lg white-text fa-2x">Pinterest </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 text-primary">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+
+        <!-- Footer -->
     </footer>
 
 
