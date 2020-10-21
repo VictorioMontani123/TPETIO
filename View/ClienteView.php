@@ -156,7 +156,7 @@ class ClienteView
         <table class="table">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">ID</th>
+                    <th scope="col">DNI</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Apellido</th>
                     <th scope="col">Direccion</th>
@@ -171,7 +171,7 @@ class ClienteView
 
             $html .= ' 
                 <tr>
-                <th scope="row">1</th>
+                <th scope="row">'. $client->id .'</th>
                 <td>' . $client->nombre . '  </td>
                 <td>' . $client->apellido . '  </td>
                 <td>' . $client->direccion . '  </td>

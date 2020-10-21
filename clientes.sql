@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-10-2020 a las 22:05:04
+-- Tiempo de generación: 21-10-2020 a las 02:18:32
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.6
 
@@ -36,6 +36,17 @@ CREATE TABLE `clientes` (
   `telefono` varchar(20) NOT NULL,
   `cuit` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `clientes`
+--
+
+INSERT INTO `clientes` (`id`, `nombre`, `apellido`, `direccion`, `email`, `telefono`, `cuit`) VALUES
+(234255, 'jona', 'fernandez', 'labarlasmdaisdnmaoiksdmaskldmalksd 321', 'almdslasda@goansd.com', '123123123', 22),
+(2349892, 'Jeremias', 'Lescano', 'tapalque 222', 'jere@tpq.com', '9328492', 29384239),
+(24352354, 'Javier', 'Archuby', 'san martin 222', 'archuvyster@javi.com', '12344235256', 2147483647),
+(123123124, 'Victorio ', 'Montani', 'san lorenzo 231231123', 'viti@viti.com', '9231492348293', 2147483647),
+(2147483647, 'Sergio', 'Fino', 'Santos Bega 3498', 'sergito@finito.com', '891479', 2147483647);
 
 --
 -- Índices para tablas volcadas
