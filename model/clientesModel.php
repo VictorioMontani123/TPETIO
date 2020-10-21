@@ -17,7 +17,7 @@ class ClientesModel{
       // insertamos un nuevo  cliente en la bbdd
       function Insert($id,$nombre,$apellido,$direccion,$email,$telefono,$cuit){
       
-          $sentencia = $this->db->prepare("INSERT INTO clientes(tipo, nombre, direccion, descripcion, valor, fecha) VALUES(?,?,?,?,?,?)");
+          $sentencia = $this->db->prepare("INSERT INTO clientes(id, nombre, apellido, direccion, email, telefono, cuit) VALUES(?,?,?,?,?,?,?)");
           $sentencia->execute([$id,$nombre,$apellido,$direccion,$email,$telefono,$cuit]);
       return;
 

@@ -1,5 +1,6 @@
 <?php
-require_once /* agregar los controladores, modelos, vistas */
+require_once "Controller/ClienteController.php";
+require_once "RouterClass.php";
     
     // CONSTANTES PARA RUTEO
     define("BASE_URL", 'http://'.$_SERVER["SERVER_NAME"].':'.$_SERVER["SERVER_PORT"].dirname($_SERVER["PHP_SELF"]).'/');
@@ -27,9 +28,9 @@ require_once /* agregar los controladores, modelos, vistas */
     $r->addRoute("modificar/:ID", "GET", "ClienteController", "Modificar"); /* en la tabla tmb */
   
 
- 
+    $r->addRoute("form", "GET", "ClienteController", "ShowForm"); // muestra el form
 
-
+    $r->addRoute("tabla", "GET", "ClienteController", "ShowAll");
 
     /* $r->addRoute("login", "GET", "UserController", "Login");
     $r->addRoute("verificarUsuario", "POST", "UserController", "VerifyUser");
